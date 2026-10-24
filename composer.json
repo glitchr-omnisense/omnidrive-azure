@@ -1,0 +1,25 @@
+{
+    "name": "omnidrive/azure",
+    "type": "library",
+    "description": "Omnidrive Azure: a container of Azure Blob Storage as an omnidrive drive, through azure-oss/storage-blob-flysystem (the adapter The PHP League names in place of its own, abandoned) - a connection string, a prefix, public and signed (SAS) addresses.",
+    "keywords": ["storage", "azure", "blob", "flysystem", "omnidrive"],
+    "homepage": "https://github.com/glitchr-studio/omnidrive-azure",
+    "license": "MIT",
+    "authors": [{"name": "Marco Meyer", "email": "marco.meyer@glitchr.io"}],
+    "require": {
+        "php": ">=8.2",
+        "azure-oss/storage-blob-flysystem": "^2.2",
+        "omniscient/omnidrive": "^1.0@dev"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^11.0"
+    },
+    "autoload": {
+        "psr-4": {"Omnidrive\\Azure\\": ""},
+        "exclude-from-classmap": ["/Tests/"]
+    },
+    "autoload-dev": {
+        "psr-4": {"Omnidrive\\Azure\\Tests\\": "Tests/"}
+    },
+    "config": {"sort-packages": true}
+}
