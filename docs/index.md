@@ -1,7 +1,7 @@
 # omnidrive/azure
 
 A container of Azure Blob Storage as an
-[omniscient/omnidrive](https://github.com/glitchr-studio/omnidrive) drive, through
+[omnisense/omnidrive](https://github.com/glitchr-omnisense/omnidrive) drive, through
 azure-oss/storage-blob-flysystem (`AzureBlobStorageAdapter` over Azure-OSS's `BlobServiceClient`) -
 the adapter The PHP League names in place of its own league/flysystem-azure-blob-storage,
 abandoned with Microsoft's retired PHP SDK. The Blob service's address is the connection string's
@@ -10,10 +10,10 @@ abandoned with Microsoft's retired PHP SDK. The Blob service's address is the co
 ## Installation
 
 ```sh
-composer require omniscient/omnidrive omnidrive/azure
+composer require omnisense/omnidrive omnidrive/azure
 ```
 
-Requires PHP 8.2, `omniscient/omnidrive` (1.x) and `azure-oss/storage-blob-flysystem` (^2.2).
+Requires PHP 8.2, `omnisense/omnidrive` (1.x) and `azure-oss/storage-blob-flysystem` (^2.2).
 
 ## Credentials
 
@@ -120,4 +120,4 @@ Not verified: Azure Blob Storage itself (Azurite only); an account with a hierar
 
 An independent, unofficial client, not affiliated with Microsoft, Azure-OSS or The PHP League. Whoever runs it is responsible for the data it stores and the
 access it gives (a public or temporary address serves the file to whoever holds it); see the core's
-Responsibility section ([omniscient/omnidrive](https://github.com/glitchr-studio/omnidrive#responsibility)).
+Responsibility section ([omnisense/omnidrive](https://github.com/glitchr-omnisense/omnidrive#responsibility)).

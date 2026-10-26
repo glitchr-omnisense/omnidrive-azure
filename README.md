@@ -1,11 +1,11 @@
 # omnidrive/azure
 
-A container of Azure Blob Storage as an [omnidrive](https://github.com/glitchr-studio/omnidrive)
+A container of Azure Blob Storage as an [omnidrive](https://github.com/glitchr-omnisense/omnidrive)
 drive, through azure-oss/storage-blob-flysystem - the adapter The PHP League names in place of its
 own league/flysystem-azure-blob-storage, abandoned with Microsoft's retired PHP SDK.
 
 ```sh
-composer require omniscient/omnidrive omnidrive/azure
+composer require omnisense/omnidrive omnidrive/azure
 ```
 
 ```php
