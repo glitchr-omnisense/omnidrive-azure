@@ -45,4 +45,6 @@ may be closed by the client once sent. Nothing is sent until the first operation
 - Not verified: Azure Blob Storage itself (Azurite only); an account with a hierarchical namespace
   (Data Lake Gen2); a connection string with a SAS; Entra ID credentials (not mapped).
 
-License: MIT. Unofficial; not affiliated with Microsoft, Azure-OSS or The PHP League.
+## Responsibility
+
+Unofficial; not affiliated with Microsoft, Azure-OSS or The PHP League. Azure bills its requests, storage and transfers and keeps its own terms; whoever runs this package complies with them, and answers for the access a public or temporary address gives. MIT licence.
