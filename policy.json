@@ -1,0 +1,38 @@
+{
+    "$schema": "https://github.com/glitchr-omnisense/contracts/blob/1.x/resources/usage-policy.schema.json",
+    "provider": "azure",
+    "rateLimits": null,
+    "concurrency": null,
+    "rights": {
+        "commercial": "contract",
+        "openSourceRequired": false,
+        "caching": {
+            "permission": "allowed",
+            "maxTtl": null
+        },
+        "storage": "allowed",
+        "redistribution": "contract",
+        "attribution": {
+            "required": false,
+            "text": null,
+            "url": null,
+            "where": []
+        },
+        "licence": null
+    },
+    "requirements": {
+        "key": true,
+        "userAgent": {
+            "required": false,
+            "pattern": null
+        }
+    },
+    "provenance": {
+        "terms": "https://www.microsoft.com/licensing/terms/productoffering/MicrosoftAzure/MCA",
+        "policy": "https://learn.microsoft.com/en-us/azure/storage/blobs/scalability-targets",
+        "verifiedAt": "2026-11-10",
+        "declaredBy": "maintainer",
+        "contact": null,
+        "notes": "Azure Blob Storage (or Azurite), under the Microsoft Customer Agreement and the Product Terms for Azure ('contract'), the content the customer's own. Limits: Microsoft publishes scalability targets, not quotas - 'up to 3,000 requests per second' for a single block blob, 'up to 500' for a page blob (read 2026-11-10, page dated 2026-07-24); past them, and on a hot partition before them, Azure answers 503 Server Busy or 500 Operation Timeout. Per blob, which no scope of the schema counts: unknown (null) here, the figures in this note. The key is the account's (a connection string, an account key or a SAS). Writes and retries: azure-oss/storage-blob's Guzzle middleware retries a request after a 408, 429, 500, 502, 503 or 504 or a timeout, whatever its method. Put Blob, Put Block and Put Block List of the same blob are idempotent (a replay leaves the same blob); a Delete Blob replayed after it succeeded answers 404, nothing is deleted twice; a copy replayed copies the same source onto the same blob."
+    }
+}

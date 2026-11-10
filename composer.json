@@ -21,5 +21,6 @@
     "autoload-dev": {
         "psr-4": {"Omnidrive\\Azure\\Tests\\": "Tests/"}
     },
+    "extra": {"omnisense": {"policy": "policy.json"}},
     "config": {"sort-packages": true}
 }

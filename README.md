@@ -45,6 +45,16 @@ may be closed by the client once sent. Nothing is sent until the first operation
 - Not verified: Azure Blob Storage itself (Azurite only); an account with a hierarchical namespace
   (Data Lake Gen2); a connection string with a SAS; Entra ID credentials (not mapped).
 
+## Usage policy
+
+`policy.json` (omnisense/contracts' schema, named in `composer.json` as `extra.omnisense.policy`;
+read on 2026-11-10): The Microsoft Customer Agreement and Azure's Product Terms. Limits unknown
+(`null`): Microsoft publishes scalability targets per blob, not quotas (in the notes). azure-oss'
+client retries after a 408, 429, 5xx or a timeout, whatever the method: Put Blob, Put Block and Put
+Block List are idempotent, a replayed delete answers 404. Nothing in the drive counts calls; [the
+family's page](https://github.com/glitchr-omnisense/omnidrive/blob/1.x/docs/policies.md) has every
+provider's.
+
 ## Responsibility
 
 Unofficial; not affiliated with Microsoft, Azure-OSS or The PHP League. Azure bills its requests, storage and transfers and keeps its own terms; whoever runs this package complies with them, and answers for the access a public or temporary address gives. MIT licence.
