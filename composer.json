@@ -9,7 +9,7 @@
     "require": {
         "php": ">=8.2",
         "azure-oss/storage-blob-flysystem": "^2.2",
-        "omnisense/omnidrive": "^1.0@dev"
+        "omnisense/omnidrive": "^1.0"
     },
     "require-dev": {
         "phpunit/phpunit": "^11.0"
@@ -21,6 +21,6 @@
     "autoload-dev": {
         "psr-4": {"Omnidrive\\Azure\\Tests\\": "Tests/"}
     },
-    "extra": {"omnisense": {"policy": "policy.json"}},
+    "extra": {"branch-alias": {"dev-1.x": "1.x-dev"}, "omnisense": {"policy": "policy.json"}},
     "config": {"sort-packages": true}
 }
